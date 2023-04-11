@@ -5,27 +5,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to KokoaTalk</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="status-bar">
     <div class="status-bar__column">
       <span>No Service</span>
-      <!-- TODO: Wifi Icon -->
+      <span class="status-bar__wifi--overwrap">
+      <i class="fa-sharp fa-solid fa-wifi fa-2xs"></i>
+      </span>
     </div>
     <div class="status-bar__column">
       <span>18:43</span>
     </div>
     <div class="status-bar__column">
-      <!-- TODO: Rotate Icon -->
+      <span class="status-bar__rotate--overwrap">
+        <i class="fa-solid fa-rotate-right"></i>
+        <i class="fa-solid fa-lock"></i>
+      </span>
       <span>11%</span>
-      <!-- TODO: Battery Icon -->
-      <!-- TODO: Lightning Icon -->
+      <span class="status-bar__battery--overwrap">
+        <i class="fa-solid fa-battery-empty"></i>
+        <i class="status-bar__battery--10"></i>
+      </span>
+      <i class="fa-solid fa-bolt"></i>
     </div>
   </div>
-
   <main>
-    <h1>Welcome to KokoaTalk</h1>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to KokoaTalk</h1>
+      <p class="welcome-header__text">If you have a Kokoa Account,<br> log in with your email or phone number</p>
+    </header>
 
+    <form id="login-form">
+      <input type="text" placeholder="Email or phone number" required />
+      <input type="password" placeholder="Password" required />
+      <input type="submit" value="Log In" />
+      <input type="button" value="Sign up" />
+      <a href="#">Find Kakao Account or Password</a>
+    </form>
   </main>
+  <script src="https://kit.fontawesome.com/abdce81a3c.js" crossorigin="anonymous"></script>
 </body>
 </html>
