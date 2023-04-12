@@ -1,0 +1,76 @@
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.875rem;
+}
+#login-form input {
+  padding: 1rem 0;
+  border: 0 none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+  transition: border-color 0.2s ease-in-out;
+}
+#login-form input[type="text"]:focus,
+#login-form input[type="password"]:focus {
+  outline: 0 none;
+  border-color: var(--yellow);
+}
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.35);
+}
+#login-form input[type="text"]:focus::placeholder,
+#login-form input[type="password"]:focus::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+#login-form input[type="submit"],
+#login-form input[type="button"] {
+  padding: 0.9rem;
+  border: 0 none;
+  font-size: 0.85rem;
+  margin: 0.5rem 0 0;
+  cursor: pointer;
+  border-radius: 3px;
+}
+#login-form input[type="submit"]:focus,
+#login-form input[type="button"]:focus {
+  outline: 2px dotted var(--yellow);
+}
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+}
+#login-form a {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+#login-form a:visited {
+  color: inherit;
+}
+#login-form a:hover,
+#login-form a:active,
+#login-form a:focus {
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+  outline: 0 none;
+}
+
+.welcome-header {
+  margin: 5rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-header__title {
+  font-family: "neue-haas-grotesk-text", Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: -0.02rem;
+}
+.welcome-header__text {
+  width: 60%;
+  color: #777;
+  font-weight: lighter;
+  line-height: 1.3;
+}
