@@ -36,7 +36,6 @@ main {
   max-width: 25rem;
   padding: 2rem 1rem 1rem;
   margin: 0 auto;
-  border: var(--normal-border) solid turquoise;
 }
 strong {
   font-weight: 800;

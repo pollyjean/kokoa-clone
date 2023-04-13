@@ -4,13 +4,216 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>You Are Awesome!</title>
+  <title>My Library</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/library.css">
 </head>
 
 <body>
+  <div class="lib-head">
+    <header>
+      <h1 class="lib-head__title">Library</h1>
+    </header>
+    <nav class="lib-head__nav">
+      <div class="lib-head__menu"><a href="#">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" tiyle="menu">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path d="M3 12H15M3 6H21M3 18H21" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            </path>
+          </g>
+        </svg>
+      </a></div>
+      <div class="lib-head__basket"><a href="#">
+        <svg fill="#000000" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" title="shopping basket">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <title>ionicons-v5-d</title>
+            <path d="M339.2,217.6,256,106.67,172.8,217.6l-25.6-19.2,96-128a16,16,0,0,1,25.6,0l96,128Z"></path>
+            <path
+              d="M441.59,192H70.41a12,12,0,0,0-11.68,14.77L112.59,434H399.41l53.86-227.23A12,12,0,0,0,441.59,192ZM256,351.66A37.71,37.71,0,1,1,293.89,314,37.88,37.88,0,0,1,256,351.66Z">
+            </path>
+          </g>
+        </svg>
+      </a></div>
+    </nav>
+  </div>
+
+  <form id="lib-search">
+    <input type="text" placeholder="Search books..." />
+    <button type="submit">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="w-6 h-6" title="View Search Result">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+      </svg>
+    </button>
+  </form>
+
+  <main class="lib">
+    <section class="lib-today">
+      <h2 class="lib__title">Book of the day</h2>
+      <div class="lib-today__contents">
+        <div class="lib-today__info">
+          <strong class="lib-today__book-title lib__sub-title">No Fixed Abode</strong>
+          <span class="lib-today__author">Journey Through</span>
+          <ol class="lib-today__rating lib__rating">
+            <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+            <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+            <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+            <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ol>
+          <ul class="lib-today__tags lib__tags">
+            <li>Journey</li>
+            <li>Biography</li>
+          </ul>
+          <div class="lib-today__btns">
+            <button class="lib-today__bookmark-btn">
+              <i class="fas fa-bookmark" title="Bookmark"></i>
+            </button>
+            <a href="#" class="lib-today__now-btn">Book Now</a>
+          </div>
+        </div>
+        <div class="lib-today__cover">
+          <img src="https://picsum.photos/id/200/520/720" alt="" class="lib__cover-image" />
+        </div>
+      </div>
+    </section>
+    <section class="lib-adv">
+      <h2 class="lib__title">Top Adventures</h2>
+      <div class="lib-adv__list--wrap">
+        <ul class="lib-adv__list">
+          <li>
+            <div class="lib-adv__cover">
+              <img src="https://picsum.photos/id/201/520/720" alt="" class="lib__cover-image">
+            </div>
+            <ol class="lib-adv__rating lib__rating">
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ol>
+          </li>
+          <li>
+            <div class="lib-adv__cover">
+              <img src="https://picsum.photos/id/202/520/720" alt="" class="lib__cover-image">
+            </div>
+            <ol class="lib-adv__rating lib__rating">
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ol>
+          </li>
+          <li>
+            <div class="lib-adv__cover">
+              <img src="https://picsum.photos/id/211/520/720" alt="" class="lib__cover-image">
+            </div>
+            <ol class="lib-adv__rating lib__rating">
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ol>
+          </li>
+          <li>
+            <div class="lib-adv__cover">
+              <img src="https://picsum.photos/id/211/520/720" alt="" class="lib__cover-image">
+            </div>
+            <ol class="lib-adv__rating lib__rating">
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ol>
+          </li>
+          <li>
+            <div class="lib-adv__cover">
+              <img src="https://picsum.photos/id/201/520/720" alt="" class="lib__cover-image">
+            </div>
+            <ol class="lib-adv__rating lib__rating">
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ol>
+          </li>
+          <li>
+            <div class="lib-adv__cover">
+              <img src="https://picsum.photos/id/202/520/720" alt="" class="lib__cover-image">
+            </div>
+            <ol class="lib-adv__rating lib__rating">
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ol>
+          </li>
+          <li>
+            <div class="lib-adv__cover">
+              <img src="https://picsum.photos/id/211/520/720" alt="" class="lib__cover-image">
+            </div>
+            <ol class="lib-adv__rating lib__rating">
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ol>
+          </li>
+          <li>
+            <div class="lib-adv__cover">
+              <img src="https://picsum.photos/id/211/520/720" alt="" class="lib__cover-image">
+            </div>
+            <ol class="lib-adv__rating lib__rating">
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ol>
+          </li>
+          <li>
+            <div class="lib-adv__cover">
+              <img src="https://picsum.photos/id/212/520/720" alt="" class="lib__cover-image">
+            </div>
+            <ol class="lib-adv__rating lib__rating">
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li class="lib__rating--active"><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="lib-auth">
+      <h2 class="lib__title">Popular authors</h2>
+      <div class="lib-auth__content">
+        <div class="lib-auth__info">
+          <strong class="lib-adv__author lib__sub-title">George Raymond Richard Martin</strong>
+          <p class="lib-auth__desc">
+            Mordern American science fiction writer, screenwriter, producer and editor, winner of many library awards.
+          </p>
+        </div>
+        <div class="lib-auth__cover">
+          <img src="https://picsum.photos/id/212/520/620" alt="" class="lib__cover-image" />
+        </div>
+      </div>
+
+    </section>
+  </main>
 </body>
 
 </html>
