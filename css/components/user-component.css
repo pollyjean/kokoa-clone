@@ -1,0 +1,41 @@
+.user-component,
+.user-component__column:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 0.75rem;
+}
+.user-component__column {
+  display: flex;
+  align-items: center;
+}
+.user-component__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.user-component__title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: -0.05px;
+}
+.user-component__preview-text {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #a0a0a0;
+  letter-spacing: -0.05px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-bottom: 0.2rem;
+  width: 60vw;
+}
+.user-component__avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 40%;
+}
+.user-component__unread-num {
+  color: #999;
+  font-size: 0.9rem;
+}
