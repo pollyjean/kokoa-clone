@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Friends - SkyTalk</title>
+  <title>Chats - SkyTalk</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body__mobile-pages">
@@ -29,7 +29,7 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
         <span><i class="fa-solid fa-magnifying-glass fa-xl" title="Search"></i></span>
         <span><i class="fa-solid fa-music fa-xl" title="Music"></i></span>
@@ -37,61 +37,31 @@
       </div>
     </header>
 
-    <main class="friends-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img src="https://picsum.photos/id/247/300/300" alt="" class="user-component__avatar">
-          <div class="user-component__text">
-            <h4 class="user-component__title">Skysurfr</h4>
-            <!-- <p class="user-component__preview-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> -->
-          </div>
-        </div>
-        <div class="user-component__column"></div>
-      </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <h3 class="friends-screen__channel-title">Channel</h3>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 icon__link-arrow icon__link-arrow--up">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
-        </div>
-
-        <a href="chats.html" class="user-component">
+    <main class="chats-screen">
+      <div class="chats-screen__channel">
+        <a href="talk.html" class="user-component">
           <div class="user-component__column">
             <img src="https://picsum.photos/id/227/300/300" alt="" class="user-component__avatar">
             <div class="user-component__text">
               <h4 class="user-component__title">SkyTalk Service</h4>
-              <!-- <p class="user-component__preview-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> -->
+              <p class="user-component__preview-text">Please confirm account info.</p>
             </div>
           </div>
           <div class="user-component__column">
-            <span class="user-component__unread-num">2</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              class="w-6 h-6 icon__link-arrow">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-            </svg>
+            <span class="user-component__unread-time">10:20</span>
+            <span class="user-component__unread-number">1</span>
           </div>
         </a>
-        
       </div>
     </main>
 
-    <a href="#" id="important-info">
-      <i>i</i>
-      <span class="Important Info">Important Info</span>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-        class="w-6 h-6 icon__link-arrow">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-      </svg>
-    </a>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="friends.html" class="nav__btn selected"><i class="fa-solid fa-dove fa-xl"></i></a>
+          <a href="friends.html" class="nav__btn"><i class="fa-solid fa-dove fa-xl" title="Friends"></i></a>
         </li>
         <li class="nav__item">
-          <a href="chats.html" class="nav__btn">
+          <a href="chats.html" class="nav__btn selected">
             <span class="nav__notification nav__notification--number">1</span>
             <i class="fa-solid fa-comments fa-xl" title="Chats"></i>
           </a>
@@ -103,7 +73,7 @@
     </nav>
 
     <input type="checkbox" id="pop-player">
-    <aside class="music-playbar">
+    <aside class="music-playbar bounceInUp">
       <label for="pop-player">
         <div class="music-playlist__artist-photo">
           <img src="https://picsum.photos/id/322/200/200" alt="" class="music-playlist__artist-photo--image">
@@ -126,10 +96,6 @@
               class="hidden">Next</span></i></button>
       </div>
     </aside>
-
-    <div id="splash-screen">
-      <i class="fa-solid fa-dove fa-xl"></i>
-    </div>
   </div>
   <script src="https://kit.fontawesome.com/abdce81a3c.js" crossorigin="anonymous"></script>
 </body>

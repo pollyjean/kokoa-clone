@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talk with SkyTalk Serivce - SkyTalk</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body__mobile-pages body__mobile-pages__chat">
+  <div class="mobile-page mobile-page__talk">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__wifi--text">Telecom</span>
+        <i class="fa-sharp fa-solid fa-wifi fa-2xs"></i>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__time--text">10:23</span>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__rotate--overwrap">
+          <i class="fa-solid fa-rotate-right"></i>
+          <i class="fa-solid fa-lock"></i>
+        </span>
+        <span class="status-bar__battery--text">11%</span>
+        <i class="fa-solid fa-battery-half"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header screen-header__talk">
+      <a href="chats.html" class="screen-header__back screen-header__column"><i class="fa-solid fa-chevron-left" title="Back"></i></a>
+      <h1 class="screen-header__title screen-header__column">SkyTalk Service</h1>
+      <div class="screen-header__icons screen-header__column">
+        <span><i class="fa-solid fa-magnifying-glass fa-xl" title="Search"></i></span>
+        <span><i class="fa-solid fa-bars" title="Menu"></i></span>
+      </div>
+    </header>
+
+    <main id="talk-screen">
+      <div class="talk-screen__contents">
+
+        <div class="message__row message__notification">
+          <div class="message__time-stamp">
+            Sunday, March 16, 2023
+          </div>
+        </div>
+
+        <div class="message__row">
+          <img src="https://picsum.photos/id/227/300/300" alt="" class="message__thumb" />
+          <div class="message__content">
+            <span class="message__name">SkyTalk Service</span>
+            <p class="message__bubble">Hello, Skysurfr</p>
+          </div>
+          <span class="message__talk-time">9:48</span>
+        </div>
+
+        <div class="message__row message__own">
+          <div class="message__content">
+            <p class="message__bubble">What's up?</p>
+          </div>
+          <span class="message__talk-time">9:49</span>
+        </div>
+
+        <div class="message__row">
+          <img src="https://picsum.photos/id/227/300/300" alt="" class="message__thumb" />
+          <div class="message__content">
+            <span class="message__name">SkyTalk Service</span>
+            <p class="message__bubble">Please confirm account info.</p>
+          </div>
+          <span class="message__talk-time">10:20</span>
+        </div>
+      </div>
+    </main>
+
+    <input type="checkbox" id="pop-player">
+    <aside class="music-playbar">
+      <label for="pop-player">
+        <div class="music-playlist__artist-photo">
+          <img src="https://picsum.photos/id/322/200/200" alt="" class="music-playlist__artist-photo--image">
+          <img src="https://picsum.photos/id/322/200/200" alt=""
+            class="music-playlist__artist-photo--image music-playlist__artist-photo--blur">
+        </div>
+      </label>
+      <div class="music-playbar__music-info">
+        <span class="music-playbar__music-artist">10-Feet</span>
+        <strong class="music-playbar__music-title">Dai Zero Kan</strong>
+      </div>
+      <div class="music-playbar__btn-group">
+        <button class="music-playbar__btn music-playbar__btn-prev"><i class="fas fa-step-backward"><span
+              class="hidden">Previous</span></i></button>
+        <button class="music-playbar__btn music-playbar__btn-play">
+          <i class="fas fa-pause"><span class="hidden">Pause</span></i>
+          <!-- <i class="fas fa-play"><span class="hidden">Play</span></i> -->
+        </button>
+        <button class="music-playbar__btn music-playbar__btn-forward"><i class="fas fa-step-forward"><span
+              class="hidden">Next</span></i></button>
+      </div>
+    </aside>
+
+    <form id="reply">
+      <div class="reply__column">
+        <button class="reply__more-btn"><i class="fa-regular fa-square-plus fa-xl" title="more"></i></button>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." class="reply__input" />
+        <div class="reply__btn-group">
+          <button class="reply__emoji-btn"><i class="fa-regular fa-face-smile fa-xl"></i></button>
+          <button type="submit" class="reply__enter-btn"><i class="fa-solid fa-arrow-up fa-sm" title="enter"></i></button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="https://kit.fontawesome.com/abdce81a3c.js" crossorigin="anonymous"></script>
+</body>
+</html>

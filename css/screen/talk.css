@@ -1,0 +1,221 @@
+.mobile-page.mobile-page__talk {
+  background-color: var(--chat-color);
+  height: 100vh;
+}
+#talk-screen {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+#talk-screen::-webkit-scrollbar {
+  width: 10px;
+}
+#talk-screen::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+#talk-screen::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.talk-screen__contents {
+  height: 400vh;
+  position: relative;
+  transform: translateY(calc(var(--status-height) + var(--header-height)));
+  animation: fadeIn 0.4s ease-out 0.2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(calc(var(--status-height) + var(--header-height) + 5px));
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(calc(var(--status-height) + var(--header-height)));
+  }
+}
+
+/* message */
+.message__row {
+  display: flex;
+  align-items: stretch;
+  margin: 1rem 0.5rem;
+  gap: 0 0.5rem;
+}
+.message__row:last-child {
+  animation: 0.2s slideInLeft ease-out;
+  animation-duration: 2s;
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-150rem);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(3px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.message__row.message__own {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+.message__notification {
+  justify-content: center;
+}
+.message__time-stamp {
+  font-size: 0.65rem;
+  height: 1.1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 0 1rem;
+  color: #fff;
+}
+.message__thumb {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 20px;
+}
+.message__name {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0.25rem 0;
+  display: block;
+  letter-spacing: -0.1px;
+  white-space: nowrap;
+  margin-bottom: 0.5rem;
+}
+.message__content {
+  max-width: 45%;
+}
+.message__bubble {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0 12px 12px 12px;
+  font-size: 0.85rem;
+}
+.message__own .message__bubble {
+  border-radius: 12px 0 12px 12px;
+  background-color: var(--main-color);
+}
+.message__talk-time {
+  display: flex;
+  align-items: flex-end;
+  font-size: 0.6rem;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: -0.15px;
+  margin: 0 -0.3rem;
+}
+
+#reply {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #fff;
+  padding: var(--side-space);
+  height: 3rem;
+}
+.reply__column:first-child {
+  flex: 0 0 2.5rem;
+  display: flex;
+  align-items: center;
+}
+.reply__column:nth-child(2) {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+}
+.reply__more-btn {
+  border: 0 none;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.5);
+}
+.reply__input {
+  width: 84vw;
+  position: absolute;
+  right: 0.5rem;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  border-radius: 3rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.033);
+}
+#reply input[type="text"]:focus {
+  outline: 0 none;
+  border-color: var(--main-color);
+}
+#reply input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+#reply input[type="text"]:focus::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.reply__btn-group {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.reply__emoji-btn {
+  background-color: transparent;
+  border: 0 none;
+  color: rgba(0, 0, 0, 0.5);
+}
+.reply__enter-btn {
+  background-color: var(--main-color);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#reply:focus-within .reply__column:first-child {
+  opacity: 0;
+  transition: all 0.1s linear;
+}
+#reply:focus-within .reply__input {
+  width: 95vw;
+  transition: all 0.4s linear;
+}
+
+@media screen and (min-width: 420px) {
+  .mobile-page.mobile-page__talk {
+    background-color: var(--chat-color);
+    height: 41.6875rem;
+  }
+  #reply {
+    position: absolute;
+  }
+  .reply__input {
+    width: 19rem;
+    right: auto;
+  }
+  #reply:focus-within .reply__input {
+    transform: translateX(-2.5rem);
+    width: 21.5rem;
+  }
+}

@@ -2,8 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: var(--status-height);
   padding: 1rem var(--side-space);
+  width: 100%;
+}
+.body__mobile-pages__chat .screen-header {
+  position: absolute;
+  z-index: 2;
+  top: var(--status-height);
+  background-color: rgba(170, 193, 208, 0.2);
+  backdrop-filter: blur(2px);
 }
 .screen-header__title {
   font-size: 1.5rem;

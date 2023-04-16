@@ -4,42 +4,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - KokoaTalk</title>
+  <title>SkyTalk!</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <div class="status-bar">
-    <div class="status-bar__column">
-      <span class="status-bar__wifi--text">No Service</span>
-      <i class="fa-sharp fa-solid fa-wifi fa-2xs"></i>
+<body class="body__mobile-pages">
+  <div class="mobile-page">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__wifi--text">Telecom</span>
+        
+        <i class="fa-sharp fa-solid fa-wifi fa-2xs"></i>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__time--text">18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__rotate--overwrap">
+          <i class="fa-solid fa-rotate-right"></i>
+          <i class="fa-solid fa-lock"></i>
+        </span>
+        <span class="status-bar__battery--text">11%</span>
+        <i class="fa-solid fa-battery-half"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
     </div>
-    <div class="status-bar__column">
-      <span class="status-bar__time--text">18:43</span>
-    </div>
-    <div class="status-bar__column">
-      <span class="status-bar__rotate--overwrap">
-        <i class="fa-solid fa-rotate-right"></i>
-        <i class="fa-solid fa-lock"></i>
-      </span>
-      <span class="status-bar__battery--text">11%</span>
-      <i class="fa-solid fa-battery-half"></i>
-      <i class="fa-solid fa-bolt"></i>
-    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome To SkyTalk</h1>
+      <p class="welcome-header__text">If you have a SkyTalk Account, log in with your email or phone number</p>
+    </header>
+    <main>
+      <form id="login-form" action="friends.html" method="get">
+        <input type="text" name="username" placeholder="Email or phone number" />
+        <input type="password" name="password" placeholder="Password" />
+        <input type="submit" value="Log In" />
+        <input type="button" value="Sign up" />
+        <a href="friends.html">Find SkyTalk Account or Password</a>
+      </form>
+    </main>
   </div>
 
-  <header class="welcome-header">
-    <h1 class="welcome-header__title">Welcome to KokoaTalk</h1>
-    <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number</p>
-  </header>
-  <main>
-    <form id="login-form" action="friends.html" method="get">
-      <input type="text" name="username" placeholder="Email or phone number" required />
-      <input type="password" name="password" placeholder="Password" required />
-      <input type="submit" value="Log In" />
-      <input type="button" value="Sign up" />
-      <a href="#">Find Kakao Account or Password</a>
-    </form>
-  </main>
+
   <script src="https://kit.fontawesome.com/abdce81a3c.js" crossorigin="anonymous"></script>
 </body>
 </html>

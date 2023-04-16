@@ -2,13 +2,18 @@
   font-family: var(--system-font);
   display: flex;
   justify-content: center;
-  margin: 5px 0;
+  padding: 5px 0;
   font-size: 0.85rem;
   letter-spacing: -0.05px;
-  position: fixed;
+}
+.body__mobile-pages__chat .status-bar {
+  position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
   width: 100%;
+  background-color: rgba(170, 193, 208, 0.2);
+  backdrop-filter: blur(2px);
 }
 .status-bar__column {
   display: flex;
@@ -51,4 +56,15 @@
   color: rgba(0, 0, 0, 0.6);
   font-size: 1.2rem;
   margin-right: 5px;
+}
+.screen-header .fa-gear:hover {
+  animation: rotate-gear 3s linear infinite;
+}
+@keyframes rotate-gear {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
